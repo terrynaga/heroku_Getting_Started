@@ -9,6 +9,7 @@ import os
 # Create your views here.
 def index(request):
     # return HttpResponse('Hello from Python!')
+     return HttpResponse('ようこそPythonへ!')
 
     #return render(request, "index.html")
 
@@ -16,8 +17,8 @@ def index(request):
     #print(r.text)
     #return HttpResponse('<pre>' + r.text + '</pre>')
 
-    times = int(os.environ.get('TIMES',3))
-    return HttpResponse('Hello! ' * times)
+    #times = int(os.environ.get('TIMES',3))
+    #return HttpResponse('Hello! ' * times)
 
 def db(request):
 
